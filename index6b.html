@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+        <img src="img/a7.jpg" usemap="#image_map">
+        <map name="image_map">
+          <area alt="" title="" onclick="timbre('No contesta nadie');" coords="1936,1442,1989,1504" shape="rect">
+          <area alt="" title="" onclick="timbre('Prueba de nuevo');" coords="1928,1515,1993,1569" shape="rect">
+          <area alt="" title="" onclick="timbre('Más suerte la próxima');" coords="1932,1576,1989,1634" shape="rect">
+          <area alt="" title="" onclick="timbre('Pesado no llames');" coords="2085,1461,2135,1511" shape="rect">
+          <area alt="" title="" onclick="timbre('¿En serio?, ¿A estás horas?');" coords="2077,1519,2139,1576" shape="rect">
+          <area alt="" title="" onclick="timbre('Se ha equivocado');" coords="2077,1584,2150,1641" shape="rect">
+          <area alt="" title="" href="index8.html" coords="2074,1389,2139,1450" shape="rect">
+        </map>
+        
+ 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://davidjbradshaw.com/imagemap-resizer/js/imageMapResizer.min.js"></script>
+<script type="text/javascript">
+    const timbre = alerta => {
+      const audio = new Audio('sounds/alarm_clock_1.wav')
+      audio.play()
+      setTimeout(()=>{
+        audio.pause();
+        alert(alerta)
+      },3000)
+    }
+    $('map').imageMapResize();
+</script>
+
+</body>
+</html>
